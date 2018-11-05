@@ -12,6 +12,9 @@ Creating Assignments & Tasks-
 In-order to use KnowIt's understanding capabilities, we have Lists & Tasks that allow you to add Vocabulary, Multiple Choice Questions, Typing Speed Tests, Timed Questions and Short Response.
 
 Security Within #KnowIt-
-KnowIt is the only quiz/assignement platform that has been built up with security in mind. KnowIt, will offer a feature for you to request your data, or delete all of you're data. Not getting into specifics but, we do have monitors setup to filter out bots and outright make it near impossible for an-answer bot to be made. We have systems in-place so if a new Device or location is detected and you have extra security enabled you will need to get the six digit code either via Text or Email.  
+KnowIt is the only quiz/assignement platform that has been built up with security in mind. KnowIt, will offer a feature for you to request your data, or delete all of you're data. Not getting into specifics but, we do have monitors setup to filter out bots and outright make it near impossible for an-answer bot to be made. We have systems in-place so if a new Device or location is detected and you have extra security enabled you will need to get the six digit code either via Text or Email.
+
+For The IT Departments- 
+KnowIt is built on the k8 framework, this allows us/you to quickly test and deploy accross a number of servers. K8 allows us to provide updates and makes managing the reources within the Product pie. 
 
 This project is Open Source, meaning it is allowed to be used/taken as-long as credit is given. 
