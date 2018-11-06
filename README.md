@@ -18,3 +18,22 @@ For The IT Departments-
 KnowIt is built on the k8 framework, this allows us/you to quickly test and deploy accross a number of servers. K8 allows us to provide updates and makes managing the reources within the Product pie. 
 
 This project is Open Source, meaning it is allowed to be used/taken as-long as credit is given. 
+
+To Build The Project
+- Clone It
+- Install VueJS If It's Not Installed
+npm install -g vue-cli
+- Check Vues Version
+vue --version
+- Get Server Dependinces
+cd server
+npm install
+- Get Client Dependinces
+cd client
+npm install
+- To Run The Project
+mongod
+cd server
+npm start
+cd client
+npm start

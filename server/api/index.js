@@ -1,7 +1,8 @@
+//This runs the Routing for the API Servies
 const express = require('express')
 const router = express.Router()
-
-require('./routes/transaction')(router)
-require('./routes/user')(router)
+//Possible Routes that are used
+require('./routes/')(router)
+require('./routes/r_user')(router)
 
 module.exports = router

@@ -7,6 +7,7 @@ let userSchema = new Schema({
   email: { type: String, required: true },
   password: { type: String, required: true },
   isActive: { type: Boolean, default: true },
+  Userlevel: { type: String, required: true, default: true },
   createdOn: { type: Date, default: Date.now }
 })
 
