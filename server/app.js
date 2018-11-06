@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 })
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost:27017/globomantics')
+mongoose.connect('mongodb://Error404:GJABFNUAB!^&403@ds045087.mlab.com:45087/knowit')
 const db = mongoose.connection
 
 db.on('error', console.error.bind(console, 'connection error:'))
