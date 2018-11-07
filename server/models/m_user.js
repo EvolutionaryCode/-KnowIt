@@ -12,11 +12,11 @@ let userSchema = new Schema({
     required: true, 
     default: user
   },
-  first: {
+  firstname: {
     type: String, 
     required: true
   },
-  last: {
+  lastname: {
     type: String, 
     required: true
   },
@@ -33,13 +33,26 @@ let userSchema = new Schema({
     type: Boolean, 
     default: true
   },
-  PatronId: {
-    type: String
-  },
   createdOn: {
     type: Date, 
     default: Date.now
-  }
+  },
+  inclass: {
+    type: Boolean,
+    default: false,
+    Classes: {
+      Type: [JoinedClasses],
+      required: false
+    }
+  },
+  parentsset: {
+    type: Boolean,
+    default: false,
+    Parents: {
+      Type: [ParentIDs],
+      required: false
+    }
+  } 
 })
 
 const User = mongoose.model('User', userSchema)

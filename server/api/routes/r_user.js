@@ -1,4 +1,5 @@
-const User = require('../../models/user')
+const User = require('../../models/m_user')
+const config = require("../config");
 
 module.exports = function (router) {
   router.get('/user/:id', function (req, res) {
@@ -7,7 +8,7 @@ module.exports = function (router) {
         .json(docs))
       .catch(err => res.status(500)
         .json({
-          message: 'Error finding user',
+          message: ('config.ServerUserRouteResponses.FailureFindUserUsingUserID'),
           error: err
         }))
   })
@@ -18,7 +19,7 @@ module.exports = function (router) {
         .json(docs))
       .catch(err => res.status(500)
         .json({
-          message: 'Error finding user',
+          message: ('config.ServerUserRouteResponses.FailureFindUserUsingUserEmail'),
           error: err
         }))
   })

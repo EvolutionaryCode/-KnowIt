@@ -31,7 +31,7 @@ let TaskSchema = new Schema({
         type: String,
         required: true
     },
-    qccv: {
+    qcommoncore: {
         type: String,
     }
   }, //End of Questions Nested Schema
@@ -61,12 +61,44 @@ let TaskSchema = new Schema({
         type: Boolean,
         required: true,
         default: false,
-        JoinCode:
-
+        JoinCode: {
+            Type: String,
+            required: true
+        },
+        QRCode: {
+            Type: String,
+            required: true
+        }
     },//End Of Live Section
+    Limits: {
+        type: Boolean,
+        required: true,
+        default: false,
+        WhitelistedSite: {
+            type: [WhitlistedWebsites],
+            required: false,
+        },
+        BlacklistedSite: {
+            type: [BlacklistedWebsites],
+            required: false,
+        },
+        OpenNoteLimits: {
+            type: Boolean,
+            required: false,
+            default: false,
+            Starttime: {
+                type: Date,
+                required: false  
+            },
+            Endtime: {
+                type: Date,
+                required: false
+            }
+        }//End OpenNoteLimits
+    }, //End Of Limits
   }, //End Of Settings
 })
 
 const User = mongoose.model('Tasks', tasksSchema)
 
-module.exports = Logs
+module.exports = Tasks

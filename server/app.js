@@ -4,9 +4,9 @@ const api = require('./api')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
+const config = require("../config");
 
-app.set('port', (process.env.PORT || 8081))
-
+app.set('port', (process.env.PORT || (config.db.APIport)))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -23,14 +23,20 @@ app.use(function (req, res, next) {
 })
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://Error404:GJABFNUAB!^&403@ds045087.mlab.com:45087/knowit')
+//Get Config From Config File
+const MongoDatabase = config.database.db
+const MongoDBUsername = config.database.username
+const MongoDBPassword = config.database.password
+mongoose.connect('mongodb://(MongoDBUsername):(MongoDBPassword)@(MongoDatabase)')
 const db = mongoose.connection
 
-db.on('error', console.error.bind(console, 'connection error:'))
+//Get Config For API Console Responses
+
+db.on('error', console.error.bind(console, ('config.APIResponseConsoleLog.MDBFailure')))
 db.once('open', function () {
-  console.log('Connected to MongoDB')
+  console.log(('config.APIResponseConsoleLog.MDBSuccess'))
 
   app.listen(app.get('port'), function () {
-    console.log('API Server Listening on port ' + app.get('port') + '!')
+    console.log(('config.APIResponseConsoleLog.APIConsoleLogSuccess'))
   })
 })

@@ -7,7 +7,7 @@ let LogsSchema = new Schema({
   },
   UserID: {
     type: String, 
-    required:true
+    required: true
   },
   RequstedAction: {
     type: String
