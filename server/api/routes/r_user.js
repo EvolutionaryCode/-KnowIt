@@ -1,5 +1,5 @@
 const User = require('../../models/m_user')
-const config = require("../../../config");
+const config = require('../../../config')
 
 module.exports = function (router) {
   router.get('/user/:id', function (req, res) {
@@ -48,8 +48,8 @@ module.exports = function (router) {
     })
   })
 
-   // Creating user document...
-   router.put('/user/new/account', function (req, res){
+  // Creating user document...
+  router.put('/user/new/account', function (req, res) {
     let doc = {
       first: req.body.first,
       last: req.body.last,
@@ -62,4 +62,4 @@ module.exports = function (router) {
       res.status(200).json(respRaw)
     })
   })
-} //End Routing Here
+} // End Routing Here

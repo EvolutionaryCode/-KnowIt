@@ -6,7 +6,7 @@ let LogsSchema = new Schema({
     type: String
   },
   UserID: {
-    type: String, 
+    type: String,
     required: true
   },
   RequstedAction: {
@@ -18,8 +18,8 @@ let LogsSchema = new Schema({
   LogLevel: {
     type: String
   },
-  timestamp : {
-    type: Date, 
+  timestamp: {
+    type: Date,
     default: Date.now }
 })
 

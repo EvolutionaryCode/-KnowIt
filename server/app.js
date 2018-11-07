@@ -4,7 +4,7 @@ const api = require('./api')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
 const cors = require('cors')
-const config = require("../config");
+const config = require('../config')
 
 app.set('port', (process.env.PORT || (config.db.APIport)))
 app.use(bodyParser.json())
@@ -23,14 +23,14 @@ app.use(function (req, res, next) {
 })
 
 const mongoose = require('mongoose')
-//Get Config From Config File
+// Get Config From Config File
 const MongoDatabase = config.database.db
 const MongoDBUsername = config.database.username
 const MongoDBPassword = config.database.password
 mongoose.connect('mongodb://(MongoDBUsername):(MongoDBPassword)@(MongoDatabase)')
 const db = mongoose.connection
 
-//Get Config For API Console Responses
+// Get Config For API Console Responses
 
 db.on('error', console.error.bind(console, ('config.APIResponseConsoleLog.MDBFailure')))
 db.once('open', function () {

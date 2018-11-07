@@ -1,42 +1,42 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-var JoinedClasses = new Schema({ name: String });
-var ParentIDs = new Schema({ name: String });
+var JoinedClasses = new Schema({ name: String })
+var ParentIDs = new Schema({ name: String })
 let userSchema = new Schema({
   Username: {
     type: String,
     required: true,
-    unique: true,
+    unique: true
   },
   Userlevel: {
-    type: String, 
-    required: true, 
-    default: "user"
+    type: String,
+    required: true,
+    default: 'user'
   },
   firstname: {
-    type: String, 
+    type: String,
     required: true
   },
   lastname: {
-    type: String, 
+    type: String,
     required: true
   },
   email: {
     type: String,
     required: true,
-    unique: true,
+    unique: true
   },
   password: {
-    type: String, 
+    type: String,
     required: true
   },
   isActive: {
-    type: Boolean, 
+    type: Boolean,
     default: true
   },
   createdOn: {
-    type: Date, 
+    type: Date,
     default: Date.now
   },
   inclass: {
@@ -54,7 +54,7 @@ let userSchema = new Schema({
       ParentUserIDs: [ParentIDs],
       required: false
     }
-  } 
+  }
 })
 
 const User = mongoose.model('User', userSchema)
