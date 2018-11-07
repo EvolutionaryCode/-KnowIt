@@ -1,5 +1,5 @@
 const User = require('../../models/m_tasks')
-const config = require("../config");
+const config = require("../../../config");
 
 //Creating & Grabbing Tasks Data By ID
 module.exports = function (router) {

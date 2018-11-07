@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+var QuestionsPossible = new Schema({ name: String });
+var WhitlistedList = new Schema({ name: String });
+var BlacklistedList = new Schema({ name: String });
 let TaskSchema = new Schema({
   Type: {
       type: String, 
@@ -24,8 +27,7 @@ let TaskSchema = new Schema({
         required: true
     },
    qpossible: {
-        type: [QuestionsPossible],
-        default: undefined
+        QuestionsList: [QuestionsPossible]
     },
     qanswer: {
         type: String,
@@ -75,11 +77,11 @@ let TaskSchema = new Schema({
         required: true,
         default: false,
         WhitelistedSite: {
-            type: [WhitlistedWebsites],
+            WhitelistedSites: [WhitlistedList],
             required: false,
         },
         BlacklistedSite: {
-            type: [BlacklistedWebsites],
+            BlacklistedSites: [BlacklistedList],
             required: false,
         },
         OpenNoteLimits: {

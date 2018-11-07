@@ -1,5 +1,5 @@
 const User = require('../../models/m_user')
-const config = require("../config");
+const config = require("../../../config");
 
 module.exports = function (router) {
   router.get('/user/:id', function (req, res) {

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+var JoinedClasses = new Schema({ name: String });
+var ParentIDs = new Schema({ name: String });
 let userSchema = new Schema({
   Username: {
     type: String,
@@ -10,7 +12,7 @@ let userSchema = new Schema({
   Userlevel: {
     type: String, 
     required: true, 
-    default: user
+    default: "user"
   },
   firstname: {
     type: String, 
@@ -41,7 +43,7 @@ let userSchema = new Schema({
     type: Boolean,
     default: false,
     Classes: {
-      Type: [JoinedClasses],
+      JoinedClassIDs: [JoinedClasses],
       required: false
     }
   },
@@ -49,7 +51,7 @@ let userSchema = new Schema({
     type: Boolean,
     default: false,
     Parents: {
-      Type: [ParentIDs],
+      ParentUserIDs: [ParentIDs],
       required: false
     }
   } 
