@@ -12,68 +12,10 @@ let TaskSchema = new Schema({
     type: String,
     required: true
   },
-  Settings: {
-    Taskclass: {
-      type: String,
-      required: false
-    },
-    TaskTimmed: {
-      type: Boolean,
-      required: true,
-      default: true,
-      StartTime: {
-        Type: Date,
-        required: false
-      },
-      LockTime: {
-        Type: Date,
-        required: false
-      }
-    }, // End of Task Timmed
-    CreatedTime: {
-      Type: Date,
-      required: true
-    },
-    Live: {
-      type: Boolean,
-      required: true,
-      default: false,
-      JoinCode: {
-        Type: String,
-        required: true
-      },
-      QRCode: {
-        Type: String,
-        required: true
-      }
-    }, // End Of Live Section
-    Limits: {
-      type: Boolean,
-      required: true,
-      default: false,
-      WhitelistedSite: {
-        WhitelistedSites: [WhitlistedList],
-        required: false
-      },
-      BlacklistedSite: {
-        BlacklistedSites: [BlacklistedList],
-        required: false
-      },
-      OpenNoteLimits: {
-        type: Boolean,
-        required: false,
-        default: false,
-        Starttime: {
-          type: Date,
-          required: false
-        },
-        Endtime: {
-          type: Date,
-          required: false
-        }
-      }// End OpenNoteLimits
-    } // End Of Limits
-  } // End Of Settings
+  Taskquestions: {
+    QuestionsList: [QuestionIDs],
+    
+  }
 })
 
 const User = mongoose.model('Tasks', tasksSchema)
