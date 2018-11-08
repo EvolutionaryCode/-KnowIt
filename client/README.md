@@ -1,6 +1,6 @@
 # client
 
-> This is the client side for KnowIt's Application
+> Knowits Front End
 
 ## Build Setup
 
