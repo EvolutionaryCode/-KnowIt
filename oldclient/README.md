@@ -1,6 +1,6 @@
 # client
 
-> A Vue.js project
+> Knowits Front End
 
 ## Build Setup
 
