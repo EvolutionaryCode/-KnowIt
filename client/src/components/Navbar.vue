@@ -3,23 +3,32 @@
 
   <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
 
-  <b-navbar-brand href="#">NavBar</b-navbar-brand>
+  <b-navbar-brand href="#/">NavBar</b-navbar-brand>
 
   <b-collapse is-nav id="nav_collapse">
 
     <b-navbar-nav>
-      <b-nav-item >
+    <b-navbar-brand href="#/about">
       <div class="back">
       <div class="button_base b07_3d_double_roll">
-        <div>01_Button</div>
-        <div>01_Button</div>
-        <div>01_Button</div>
-        <div>01_Button</div>
+        <div>About</div>
+        <div>About</div>
+        <div>About</div>
+        <div>About</div>
       </div>
       </div>
-      </b-nav-item>
-      <b-nav-item href="#">Link</b-nav-item>
-      <b-nav-item href="#" disabled>Disabled</b-nav-item>
+    </b-navbar-brand>
+    <b-navbar-brand href="#/account">
+      <div class="back">
+      <div class="button_base b07_3d_double_roll">
+        <div>account</div>
+        <div>account</div>
+        <div>account</div>
+        <div>account</div>
+      </div>
+      </div>
+    </b-navbar-brand>
+    
     </b-navbar-nav>
 
     <!-- Right aligned nav items -->
@@ -72,10 +81,9 @@ body {
     margin: 0;
     border: 0;
     overflow-x: none;
-    background-color: #ffffff;
+    background-color: none;
     font-family: Roboto Condensed, sans-serif;
     font-size: 12px;
-    font-smooth: always;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -104,8 +112,8 @@ body {
     position: relative;
     top: 50%;
     left: 50%;
-    margin-top: -25px;
-    margin-left: -100px;
+    margin-top: 0px;
+    margin-left: 0px;
     width: 200px;
     height: 50px;
     text-align: center;
