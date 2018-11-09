@@ -7,6 +7,7 @@
     "Logo": "https://www.effinghamschools.com/cms/lib/GA01000314/Centricity/Template/2//logos/district.png",
     "DistrictNote": "This is a test Note From The School District! Effingham County School District Rocks",
     "apiport": "8081",
+    "GoogleO-Auth2": "This is where you can enter in a Google Auth-2 ClientID",
     "APIResponseConsoleLog": {
         "MDBSuccess": "API Connected to MongoDB",
         "MDBFailure": "API Failed To Connect To MongoDB",
