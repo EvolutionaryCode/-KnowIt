@@ -77,6 +77,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 .preserve-3d {
