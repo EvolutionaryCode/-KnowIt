@@ -53,9 +53,9 @@ export default {
         food: null,
         checked: []
       },
-      foods: [
+      accounttype: [
         { text: 'Select One', value: null },
-        'Carrots', 'Beans', 'Tomatoes', 'Corn'
+        'Student', 'Teacher', 'Parent', 'Admin'
       ],
       show: true
     }
