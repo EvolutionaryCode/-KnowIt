@@ -23,11 +23,13 @@ app.use(function (req, res, next) {
 })
 
 const mongoose = require('mongoose')
+const autoIncrement = require('mongoose-auto-increment');
 // Get Config From Config File
 const MongoDatabase = config.database.db
 const MongoDBUsername = config.database.username
 const MongoDBPassword = config.database.password
 mongoose.connect('mongodb://(MongoDBUsername):(MongoDBPassword)@(MongoDatabase)')
+autoIncrement.initialize(connection);
 const db = mongoose.connection
 
 // Get Config For API Console Responses

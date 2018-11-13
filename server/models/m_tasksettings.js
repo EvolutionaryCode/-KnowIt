@@ -27,11 +27,11 @@ let TaskSettings = new Schema({
         },
         LiveJoinCode: {
             Type: String,
-            required: true
+            required: false
         },
         LiveQRCode: {
             Type: String,
-            required: true
+            required: false
         },
         LimitsEnabled: {
             type: Boolean,

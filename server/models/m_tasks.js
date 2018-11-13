@@ -1,8 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
+
 var WhitlistedList = new Schema({ name: String })
 var BlacklistedList = new Schema({ name: String })
+var TaskResponses = new Schema({
+  QuestionID
+})
 var AnswerList = new Schema({ name: String })
 var Questions = new Schema({
   QuestionType: {
@@ -32,6 +36,9 @@ let TaskSchema = new Schema({
   },
   Taskquestions: {
     QuestionsList: [Questions],
+  },
+  Taskresponses : {
+    Responses: [TaskResponses]
   }
 })
 
