@@ -19,8 +19,7 @@ var Questions = new Schema({
       required: true
     }
   }
-  },
-
+  }
 })
 let TaskSchema = new Schema({
   Type: {
