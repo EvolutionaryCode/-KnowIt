@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 var WhitlistedList = new Schema({ name: String })
 var BlacklistedList = new Schema({ name: String })
-let TaskSettings = new Schema({
+let TaskSettingsSchema = new Schema({
         Taskclass: {
           type: String,
           required: false
@@ -59,4 +59,7 @@ let TaskSettings = new Schema({
               type: Date,
               required: false
         }
-    })// End of Task Settings
+    })// End of Task Settings\
+    const Task = mongoose.model('TaskSettings', TaskSettingsSchema)
+
+    module.exports = TaskSettings
