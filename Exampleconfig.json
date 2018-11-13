@@ -1,9 +1,5 @@
 {
-    "database": { 
-        "db": "DatabaseName/IP",
-        "username": "DatabaseUsername",
-        "password": "DatabaseUsersPassword"
-    },
+    "Mongo": "mongodb://(Username):(Password)@(DBIP):(DBPort)/(DatabaseName)",
     "Logo": "https://www.effinghamschools.com/cms/lib/GA01000314/Centricity/Template/2//logos/district.png",
     "DistrictNote": "This is a test Note From The School District! Effingham County School District Rocks",
     "apiport": "8081",

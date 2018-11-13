@@ -24,7 +24,16 @@ app.use(function (req, res, next) {
 
 const mongoose = require('mongoose')
 // Get Config From Config File
-mongoose.connect('mongodb://(MongoDBUsername):(MongoDBPassword)@(MongoDatabase)')
+const options = {
+  useMongoClient: true,
+  autoIndex: false, // Don't build indexes
+  reconnectTries: 100, // Never stop trying to reconnect
+  reconnectInterval: 500, // Reconnect every 500ms
+  poolSize: 10, // Maintain up to 10 socket connections
+  // If not connected, return errors immediately rather than waiting for reconnect
+  bufferMaxEntries: 0
+};
+mongoose.connect(config.Monogo)
 const db = mongoose.connection
 
 // Get Config For API Console Responses
