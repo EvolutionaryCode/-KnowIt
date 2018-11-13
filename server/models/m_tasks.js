@@ -3,6 +3,25 @@ const Schema = mongoose.Schema
 
 var WhitlistedList = new Schema({ name: String })
 var BlacklistedList = new Schema({ name: String })
+var AnswerList = new Schema({ name: String })
+var Questions = new Schema({
+  QuestionType: {
+    type: String,
+    required: true
+  },
+  Question: {
+    type: String,
+    required: true,
+  Answers: {
+    PossibleAnswers: [AnswerList],
+    Correctanswer: {
+      type: string,
+      required: true
+    }
+  }
+  },
+
+})
 let TaskSchema = new Schema({
   Type: {
     type: String,
@@ -13,8 +32,7 @@ let TaskSchema = new Schema({
     required: true
   },
   Taskquestions: {
-    QuestionsList: [QuestionIDs],
-    
+    QuestionsList: [Questions],
   }
 })
 
