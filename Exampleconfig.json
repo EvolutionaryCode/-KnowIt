@@ -7,7 +7,7 @@
     "APIResponseConsoleLog": {
         "MDBSuccess": "API Connected to MongoDB",
         "MDBFailure": "API Failed To Connect To MongoDB",
-        "APIConsoleLogSuccess": "'API Server Is Listening on port ' + app.get('port') + '!'"
+        "APIConsoleLogSuccess": "'API Server Is Listening on port 8081"
     },
     "VueJSConsoleResponses": {
         "a": "google"
