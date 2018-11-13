@@ -23,6 +23,6 @@ let LogsSchema = new Schema({
     default: Date.now }
 })
 
-const User = mongoose.model('Logs', logsSchema)
+const Logs = mongoose.model('Logs', logsSchema)
 
 module.exports = Logs

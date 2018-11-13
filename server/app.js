@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const config = require('../config')
 
-app.set('port', (process.env.PORT || (config.db.APIport)))
+app.set('port', (process.env.PORT || (config.APIport)))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -23,22 +23,17 @@ app.use(function (req, res, next) {
 })
 
 const mongoose = require('mongoose')
-const autoIncrement = require('mongoose-auto-increment');
 // Get Config From Config File
-const MongoDatabase = config.database.db
-const MongoDBUsername = config.database.username
-const MongoDBPassword = config.database.password
 mongoose.connect('mongodb://(MongoDBUsername):(MongoDBPassword)@(MongoDatabase)')
-autoIncrement.initialize(connection);
 const db = mongoose.connection
 
 // Get Config For API Console Responses
 
-db.on('error', console.error.bind(console, ('config.APIResponseConsoleLog.MDBFailure')))
+db.on('error', console.error.bind(console, (config.APIResponseConsoleLog.MDBFailure)))
 db.once('open', function () {
-  console.log(('config.APIResponseConsoleLog.MDBSuccess'))
+  console.log((config.APIResponseConsoleLog.MDBSuccess))
 
   app.listen(app.get('port'), function () {
-    console.log(('config.APIResponseConsoleLog.APIConsoleLogSuccess'))
+    console.log((config.APIResponseConsoleLog.APIConsoleLogSuccess))
   })
 })

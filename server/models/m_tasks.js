@@ -1,11 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-
-var WhitlistedList = new Schema({ name: String })
-var BlacklistedList = new Schema({ name: String })
 var TaskResponses = new Schema({
-  QuestionID
+  Question: {
+    Question: String,
+    StudentAnswer: String,
+    Correctanswer: Boolean,
+  }
 })
 var AnswerList = new Schema({ name: String })
 var Questions = new Schema({
@@ -19,9 +20,12 @@ var Questions = new Schema({
   Answers: {
     PossibleAnswers: [AnswerList],
     Correctanswer: {
-      type: string,
+      type: String,
       required: true
     }
+  },
+  qcommoncore: {
+    type: String
   }
   }
 })
@@ -42,6 +46,6 @@ let TaskSchema = new Schema({
   }
 })
 
-const User = mongoose.model('Tasks', tasksSchema)
+const Task = mongoose.model('Task', TaskSchema)
 
-module.exports = Tasks
+module.exports = Task
