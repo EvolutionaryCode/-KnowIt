@@ -1,7 +1,7 @@
 <template>
 <div class="hello">
     <h1>#KnowIt</h1>
-    <img src= ../../../assets/KIlogo.png/>
+    <img src=/>
     <h2>School District Message</h2>
   </div>
 </template>

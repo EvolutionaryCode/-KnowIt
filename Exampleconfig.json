@@ -19,5 +19,8 @@
     "ServerUserRouteResponses": {
         "FailureFindUserUsingUserID": "Error finding user Using UserID",
         "FailureFindUserUsingUserEmail": "Error finding user Using Email"
+    },
+    "SecuritySettings": {
+        "bcrypthash": "14"
     }
 }
