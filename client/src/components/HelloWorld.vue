@@ -88,7 +88,6 @@ import Navbar from '../components/Navbar.vue'
 export default {
   name: 'HelloWorld',
   components: {
-    Navbar
   },
   data () {
     return {

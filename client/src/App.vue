@@ -1,14 +1,11 @@
 <template>
   <div id="app">
-    <Navbar></Navbar>
-    <Sidebar></Sidebar>
     <router-view/>
   </div>
 </template>
 
 <script>
 import Navbar from './components/Navbar.vue'
-import Sidebar from './components/Sidebar.vue'
 
 export default {
   name: 'App',
