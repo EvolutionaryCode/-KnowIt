@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Home from '@/components/pages/Home'
 import About from '@/components/About'
 import Account from '@/components/Account'
 import Register from '@/components/Register'
-import MultipleChoice from '@/components/Qtypes/MC'
 
 Vue.use(Router)
 
@@ -12,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
     },
     {
       path: '/about',
@@ -29,11 +28,6 @@ export default new Router({
       path: '/register',
       name: 'Register',
       component: Register
-    },
-    {
-      path: '/multipleChoice',
-      name: 'MultipleChoice',
-      component: MultipleChoice
     },
     {
       path: '*',

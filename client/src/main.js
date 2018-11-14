@@ -6,15 +6,26 @@ import router from './router'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import axios from 'axios'
+
+//Vuex store
+import store from './store'
+
+Vue.config.productionTip = false
+
+//Setup axios to be available globally through Vue
+Vue.axios = Vue.prototype.$http = axios.create({
+  baseURL: 'http://localhost:8081/api'
+})
 
 Vue.use(BootstrapVue)
 
-Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

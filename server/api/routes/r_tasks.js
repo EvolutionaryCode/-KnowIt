@@ -20,7 +20,7 @@ module.exports = function (router) {
         .json(docs))
       .catch(err => res.status(500)
         .json({
-          message: ('config.ServerTaskRouteResponses.FailureFindTaskSortLive'),
+          message: (config.ServerTaskRouteResponses.FailureFindTaskSortLive),
           error: err
         }))
   })//How to get the Live GHames that are active by searching through Tasks Database

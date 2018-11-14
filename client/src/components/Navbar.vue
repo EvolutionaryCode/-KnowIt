@@ -5,7 +5,8 @@
 
 
   <b-navbar-brand href="#/">
-        <img src="https://github.com/EvolutionaryCode/-KnowIt/blob/master/client/src/assets/KIlogo.png?raw=true" alt="BV">
+  <h1>#KnowIt</h1>
+        <!-- <img src="https://github.com/EvolutionaryCode/-KnowIt/blob/master/client/src/assets/KIlogo.png?raw=true" alt="BV"> -->
 </b-navbar-brand>
 
   <b-collapse is-nav id="nav_collapse">
@@ -24,20 +25,20 @@
     <b-navbar-brand href="#/account">
       <div class="back">
       <div class="button_base b07_3d_double_roll">
-        <div>account</div>
-        <div>account</div>
-        <div>account</div>
-        <div>account</div>
+        <div>Login</div>
+        <div>Login</div>
+        <div>Login</div>
+        <div>Login</div>
       </div>
       </div>
     </b-navbar-brand>
     <b-navbar-brand href="#/register">
       <div class="back">
       <div class="button_base b07_3d_double_roll">
-        <div>Login</div>
-        <div>Login</div>
-        <div>Login</div>
-        <div>Login</div>
+        <div>Register</div>
+        <div>Register</div>
+        <div>Register</div>
+        <div>Register</div>
       </div>
       </div>
     </b-navbar-brand>
@@ -85,10 +86,16 @@ export default {
     -webkit-transform-style: preserve-3d;
 }
 
+#header h1{
+    margin:0px;
+}
 body {
+    top: 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
     padding: 0;
-    margin: 0;
     border: 0;
+    margin-top: 0px;
     overflow-x: none;
     background-color: none;
     font-family: Roboto Condensed, sans-serif;

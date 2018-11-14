@@ -4,12 +4,12 @@ const Schema = mongoose.Schema
 var JoinedClasses = new Schema({ name: String })
 var ParentIDs = new Schema({ name: String })
 let userSchema = new Schema({
-  Username: {
+  username: {
     type: String,
-    required: true,
-    unique: true
+    unique: true,
+    required: true
   },
-  Userlevel: {
+  userlevel: {
     type: String,
     required: true,
     default: 'user'
@@ -29,13 +29,13 @@ let userSchema = new Schema({
   },
   password: {
     type: String,
-    required: true
+    required: true,
   },
-  isActive: {
+  isactive: {
     type: Boolean,
     default: true
   },
-  createdOn: {
+  createdon: {
     type: Date,
     default: Date.now
   },
@@ -47,7 +47,7 @@ let userSchema = new Schema({
       required: false
     }
   },
-  parentsset: {
+  parents: {
     type: Boolean,
     default: false,
     Parents: {

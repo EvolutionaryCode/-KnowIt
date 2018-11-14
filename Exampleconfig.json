@@ -1,9 +1,5 @@
 {
-    "database": { 
-        "db": "DatabaseName/IP",
-        "username": "DatabaseUsername",
-        "password": "DatabaseUsersPassword"
-    },
+    "Mongo": "mongodb://(Username):(Password)@(DBIP):(DBPort)/(DatabaseName)",
     "Logo": "https://www.effinghamschools.com/cms/lib/GA01000314/Centricity/Template/2//logos/district.png",
     "DistrictNote": "This is a test Note From The School District! Effingham County School District Rocks",
     "apiport": "8081",
@@ -11,7 +7,7 @@
     "APIResponseConsoleLog": {
         "MDBSuccess": "API Connected to MongoDB",
         "MDBFailure": "API Failed To Connect To MongoDB",
-        "APIConsoleLogSuccess": "'API Server Is Listening on port ' + app.get('port') + '!'"
+        "APIConsoleLogSuccess": "'API Server Is Listening on port 8081"
     },
     "VueJSConsoleResponses": {
         "a": "google"
@@ -23,5 +19,8 @@
     "ServerUserRouteResponses": {
         "FailureFindUserUsingUserID": "Error finding user Using UserID",
         "FailureFindUserUsingUserEmail": "Error finding user Using Email"
+    },
+    "SecuritySettings": {
+        "bcrypthash": "14"
     }
 }
