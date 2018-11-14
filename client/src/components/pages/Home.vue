@@ -1,10 +1,11 @@
 <template>
 <div class="hello">
     <h1>#KnowIt</h1>
-    <img src=/>
+    <b-img thumbnail fluid src="https://picsum.photos/250/250/?image=54" alt="Thumbnail" />
     <h2>School District Message</h2>
   </div>
 </template>
+
 
 <script>
 
