@@ -27,10 +27,19 @@ module.exports = function (router) {
 
   router.post('/tasks/new', function (req, res) {
     let task = new Task(req.body)
-    Tasks.save(function (err, Tasks) {
+    Task.save(function (err, Tasks) {
       if (err) return console.log(err)
       res.status(200).json(Tasks)
     })
   }) //How to create a new Task & Assign the task to User Who Is Logged In
+
+  router.post('/tasks/question/new', function (req, res) {
+    let question = new Question(req.body)
+    Question.save(function (err, Question) {
+      if (err) return console.log(err)
+      res.status(200).json(Question)
+    })
+  }) //How to create a new Task & Assign the task to User Who Is Logged In
+
 
 } //End Routing Here

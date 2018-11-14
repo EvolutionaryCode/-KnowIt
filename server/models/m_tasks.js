@@ -9,7 +9,7 @@ var TaskResponses = new Schema({
   }
 })
 var AnswerList = new Schema({ name: String })
-var Questions = new Schema({
+var QuestionSchema = new Schema({
   QuestionType: {
     type: String,
     required: true
@@ -47,5 +47,6 @@ let TaskSchema = new Schema({
 })
 
 const Task = mongoose.model('Task', TaskSchema)
+const Question = mongoose.model('Question', QuestionSchema)
 
 module.exports = Task
