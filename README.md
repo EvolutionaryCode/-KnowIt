@@ -1,4 +1,4 @@
-#KnowIt
+KnowIt
 
 KnowIt is a platform that enables teachers to survay their students understanding in a fun/interactive way. KnowIt works for the users, instead of the users having to learn how to work KnowIt. The core of KnowIt is coded on NodeJS and VueJS, NodeJS provides the backend while vue allows us to further the users experince while using KnowIt. Automatically, you have the option to either join by either scanning in a QR Code, Searching By Teacher or enter in a six digit unique code. KnowIt highly reccomends for you're students to create accounts, we offer Google Sign-in as-well just to make sure we form to you're needs. Automatically, you pick either if you are a Student or Teacher. After you create you're account; using a compenent in VueJS known as Vue-tour, we will guide you through the aspects of the app that you're job (Student or Teacher) needs to fullfil.
 
@@ -40,9 +40,16 @@ cd server
 npm start
 cd client
 npm start
+Flowcharts
 
-**Flowcharts**
 Basic Project Overflow - https://www.lucidchart.com/documents/view/7c76e1df-1567-410b-a63d-2f4bdd80fad3/0
+
+<h1>Want to watch a Video?</h1>
+ <h2>This video has all of the information with Importing This Project & Specific Github Information!</h2>
+ <a href="https://drive.google.com/file/d/1lVw5AcUvpYWVFXJKLuZJ1qbQjBv_3cfu/view
+" target="_blank"><img src="http://img.youtube.com/vi/4oRgHxUeBY4/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 
 **Working Backend**
 Video - https://drive.google.com/file/d/1lVw5AcUvpYWVFXJKLuZJ1qbQjBv_3cfu/view
