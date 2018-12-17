@@ -4,8 +4,14 @@
 Assignment - Craete a project to improve the schoool or community!
  * Project Name - Community Improvement Project
  * Class Larson - AP Computer Science
+ 
+## Project Requirements
+Editior - VSCode
+NodeJS - V11
+NPM - Comes with Node
+Postman - https://www.getpostman.com
 
-## KnowIt is a platform that enables teachers to survay their students understanding in a fun/interactive way. KnowIt works for the users, instead of the users having to learn how to work KnowIt. The core of KnowIt is coded on NodeJS and VueJS, NodeJS provides the backend while vue allows us to further the users experince while using KnowIt. Automatically, you have the option to either join by either scanning in a QR Code, Searching By Teacher or enter in a six digit unique code. KnowIt highly reccomends for you're students to create accounts, we offer Google Sign-in as-well just to make sure we form to you're needs. Automatically, you pick either if you are a Student or Teacher. After you create you're account; using a compenent in VueJS known as Vue-tour, we will guide you through the aspects of the app that you're job (Student or Teacher) needs to fullfil.
+### KnowIt is a platform that enables teachers to survay their students understanding in a fun/interactive way. KnowIt works for the users, instead of the users having to learn how to work KnowIt. The core of KnowIt is coded on NodeJS and VueJS, NodeJS provides the backend while vue allows us to further the users experince while using KnowIt. Automatically, you have the option to either join by either scanning in a QR Code, Searching By Teacher or enter in a six digit unique code. KnowIt highly reccomends for you're students to create accounts, we offer Google Sign-in as-well just to make sure we form to you're needs. Automatically, you pick either if you are a Student or Teacher. After you create you're account; using a compenent in VueJS known as Vue-tour, we will guide you through the aspects of the app that you're job (Student or Teacher) needs to fullfil.
 
 ### Teachers-
 Teachers are guided through creating new lists, adding students, creating classes, mannaging  classes, creating assignments and more upon logining into their account for the first time.
