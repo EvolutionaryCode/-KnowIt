@@ -40,3 +40,12 @@ cd server
 npm start
 cd client
 npm start
+
+**Flowcharts**
+Basic Project Overflow -
+
+**Working Backend**
+Video - https://drive.google.com/file/d/1lVw5AcUvpYWVFXJKLuZJ1qbQjBv_3cfu/view
+Tools Used:
+Postman - https://www.getpostman.com
+VsCode
