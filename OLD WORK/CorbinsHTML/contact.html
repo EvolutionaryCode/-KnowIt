@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Know It</title>
+  <meta name="KnowIt" content="KnowIt school protection">
+  <meta name="Corbin Blanchette" content="front end of site with html css and possible json">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+        <script src="js/scripts.js"></script>
+
+    <header class="header-fixed">
+
+        <div class="header-limiter">
+    
+            <h1>Know<span>It</span></h1>
+    
+            <nav>
+                <a href="login.html">Login</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+    
+        </div>
+    
+    </header>
+    
+    <!-- You need this element to prevent the content of the page from jumping up -->
+    <div class="header-fixed-placeholder"></div>
+    
+    <!-- The content -->
+    
+    
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    
+        $(document).ready(function(){
+    
+            var showHeaderAt = 150;
+    
+            var win = $(window),
+                    body = $('body');
+    
+            // Show the fixed header only on larger screen devices
+    
+            if(win.width() > 400){
+    
+                // When we scroll more than 150px down, we set the
+                // "fixed" class on the body element.
+    
+                win.on('scroll', function(e){
+    
+                    if(win.scrollTop() > showHeaderAt) {
+                        body.addClass('fixed');
+                    }
+                    else {
+                        body.removeClass('fixed');
+                    }
+                });
+    
+            }
+    
+        });
+    
+    </script>
+    
+    
+    
+    
+
+</body>
+</html>
