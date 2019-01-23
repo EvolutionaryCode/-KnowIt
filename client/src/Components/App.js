@@ -1,28 +1,32 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+import React from "react"
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+import Joke from "./Joke"
+
+function App(){
+  return (
+      <div>
+        <Joke
+            question="What did the Buddhist ask the hot dog vendor?"
+            punchline="Make me one with everything"
+        />
+        <Joke
+            question="You know why you never see elephants hiding up in trees?"
+            punchline="Because they’re really good at it."
+        />
+        <Joke
+            question="What is red and smells like blue paint?"
+            punchline="Red paint"
+        />
+        <Joke
+            question="Where does the General keep his armies?"
+            punchline="In his sleevies!"
+        />
+        <Joke
+            question="Why aren’t koalas actual bears?"
+            punchline="The don’t meet the koalafications."
+        />
       </div>
-    );
-  }
+  )
 }
 
 export default App;

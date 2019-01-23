@@ -1,12 +1,24 @@
+# Compiled files
+dist/
 
-config\.json
+# Config file
+config/config.js
 
-ToReferBackTo/
+# Node stuff
+node_modules
+.npm
+.node_repl_history
+.lock-wscript
+logs
+*.log
+npm-debug.log*
 
-ToReferBackTo/orginal_client/google\.js
-
-ToReferBackTo/orginal_client/gooleclient\.js
-
-ToReferBackTo/orginal_client/vexura\.js
-
-ToReferBackTo/Kahoot\.js
+# OS stuff
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+$RECYCLE.BIN/
+._*
+.DS_Store
+.Spotlight-V100
+.Trashes
